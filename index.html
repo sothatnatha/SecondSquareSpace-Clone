@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareSpace Clone</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="/asset/style.css">
+    <link rel="stylesheet" href="/asset/reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+
+</head>
+<body>
+    <main class="landing-backgorund">
+        <header id="main-header">
+            <div class="header-container page-wrapper">
+                <div class="brand-logo">
+                    <a href="index.html"><img src="/asset/image/png/squarespace-logo-horizontal-white.png" alt="" width="250px"></a>
+                </div>
+                <nav class="nav-container">
+                    <ul class="navbar-items">
+                        <li id="btnToggleDropdown" onclick="toggleDropdownMenu()" style="cursor: pointer;"><a>Products <i class="fa-solid fa-angle-down" style="font-size: 15px; padding: 0 5px;"></i></a></li>
+                        <li><a href="">Template</a></li>
+                        <li><a href="">Resources</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-button-container">
+                    <button id="btn-login">LOG IN</button>
+                    <button id="btn-getstarted-navbar">Get Started</button>
+                </div>
+                <div class="menubar-icon" id="mobile-menu-icon">
+                    <!-- <i class="fa-solid fa-bars-staggered" style="font-size: 25px; color: #fff; cursor: pointer;"></i> -->
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+            </div>
+            <div class="mobile-nav">
+                <ul class="navbar-items">
+                    <li onclick="openSubItemsClick('navbar-subitems-1')">
+                        <a>Products <i class="fa-solid fa-angle-down" style="font-size: 15px; padding: 0 5px; cursor: pointer;"></i></a>
+                        <ul class="navbar-subitems" id="navbar-subitems-1">
+                            <li class="collapse-items">
+                                <div class="mobile-collapse-row">
+                                    <div class="mobile-collapse-col">
+                                        <ul>
+                                            <p>Create a website</p>
+                                            <li><a href="">Overview</a></li>
+                                            <li><a href="">Award-Winning Templates</a></li>
+                                            <li><a href="">Blogging</a></li>
+                                            <li><a href="">Portfolios</a></li>
+                                            <li><a href="">Website Analytic</a></li>
+                                            <li><a href="">Connected Services</a></li>
+                                            <li><a href="">Hire an expert</a></li>
+                                            <li><a href="">Enterprise Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-collapse-col">
+                                        <ul>
+                                            <p>Sell Anything</p>
+                                            <li><a href="">Overview</a></li>
+                                            <li><a href="">Ecommerce Templates</a></li>
+                                            <li><a href="">Sell Products</a></li>
+                                            <li><a href="">Sell Services</a></li>
+                                            <li><a href="">Schedule Appointments</a></li>
+                                            <li><a href="">CheckOut,Payment & Taxes</a></li>
+                                            <li><a href="">Member Areas <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+                                            <li><a href="">Extensions</a></li>
+                                            <li><a href="">Restaurants & Hospitality <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-collapse-col">
+                                        <ul>
+                                            <p>Build You Own Brand</p>
+                                            <li><a href="">Overview</a></li>
+                                            <li><a href="">Email Marketing</a></li>
+                                            <li><a href="">SEO Tools</a></li>
+                                            <li><a href="">Social Media Tools</a></li>
+                                            <li><a href="">Video Maker <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Template</a></li>
+                    <li><a href="">Resources</a></li>
+                </ul>
+                <div class="mobible-navbar-btn">
+                    <button id="btn-login-mobile">Log In</button> <br>
+                    <button id="btn-getstarted-navbar-mobile">Get Started</button>
+                </div>
+            </div>
+        </header>
+<!-- dropdown  -->
+<div class="dropdown-container">
+    <div class="dropdown-row page-wrapper">
+        <div class="dropdown-cols">
+            <ul class="dropdown-items">
+                <h4>Create a website</h4>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Award-Winning Templates</a></li>
+                <li><a href="">Blogging</a></li>
+                <li><a href="">Portfolios</a></li>
+                <li><a href="">Website Analytic</a></li>
+                <li><a href="">Connected Services</a></li>
+                <li><a href="">Hire an expert</a></li>
+                <li><a href="">Enterprise Solutions</a></li>
+            </ul>
+        </div>
+        <div class="dropdown-cols">
+            <ul class="dropdown-items">
+                <h4>Sell Anything</h4>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Ecommerce Templates</a></li>
+                <li><a href="">Sell Products</a></li>
+                <li><a href="">Sell Services</a></li>
+                <li><a href="">Schedule Appointments</a></li>
+                <li><a href="">CheckOut,Payment & Taxes</a></li>
+                <li><a href="">Member Areas <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+                <li><a href="">Extensions</a></li>
+                <li><a href="">Restaurants & Hospitality <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+
+            </ul>
+        </div>
+        <div class="dropdown-cols">
+            <ul class="dropdown-items">
+                <h4>Build You Own Brand</h4>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Email Marketing</a></li>
+                <li><a href="">SEO Tools</a></li>
+                <li><a href="">Social Media Tools</a></li>
+                <li><a href="">Video Maker <span style="background-color: #fff; padding: 5px 20px; margin: 0 10px; color: #000;">New</span></a></li>
+
+            </ul>
+        </div>
+        <div class="dropdown-cols">
+            <ul class="dropdown-items">
+                <h4>Get a Domains</h4>
+                <li><a href="">Find a Domain</a></li>
+                <li><a href="">Transfers a Domains</a></li>
+               
+
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<!-- end dropdown -->
+
+
+
+        <div class="hero-text page-wrapper">
+            <div class="hero-text-title">
+                <h1>Everything to</h1>
+                <h1>Sell Anything</h1>
+            </div>
+            <div class="hero-text-desc">
+                <p style="color: #fff; margin-top: 10px">Start your free website trial today. No credit card required.</p>
+            </div>
+            <div class="hero-text-button">
+                <button>Get Sarted</button>
+            </div>
+        </div>
+    </main>
+
+
+<!-- all contents -->
+    <section>
+        <div class="grow-your-bn-title page-wrapper">
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">GROW YOUR</h1>
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="top-center">BUSINESS</h1>
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="center-center">ONLINE</h1>
+        </div>
+        <div class="steps-content2">
+            <div class="img"><img src="/asset/image/photoSection2.png" alt="" width="100%"></div>
+            <div class="steps-content2-details">
+                <ol class="step-list">
+                    <li class="step-contents">
+                        <p id="step-index">1</p>
+                        <div class="list-content">
+                            <h3>Create a website</h3>
+                            <div class="list-description">
+                                <p>Select from any of our industry-leading website templates, designer fonts, and color palettes that best fit your personal style and professional needs.</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="step-contents">
+                        <p id="step-index">2</p>
+                        <div class="list-content">
+                            <h3>Sell Anything</h3>
+                            <div class="list-description">
+                                <p>Explore which tools you want to add—whether it’s setting up an online store, booking services, or adding your favorite third-party extensions.</p>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li class="step-contents">
+                        <p id="step-index">3</p>
+                        <div class="list-content">
+                            <h3>Market your business</h3>
+                            <div class="list-description">
+                                <p>Stand out in every inbox and social feed. On-brand email campaigns and social tools make it easy to retain customers and grow your audience.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="btn-steps">
+                        <a href="index.html">Get Started <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="online-templates-wrapper">
+            <div class="heading-title">
+                <h1 data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">Website templates for every purpose</h1>
+                <div class="short-heading-decs">
+                    <p>Start with a flexible template, then customize to fit your style and professional needs with our website builder.</p>
+                </div>
+            </div>
+            <di class="template-container">
+                <div class="template-links">
+                    <ul class="template-items">
+                        <li><a href="">Online Store →</a></li>
+                        <li><a href="">Local Business →</a></li>
+                        <li><a href="">Portfolios →</a></li>
+                        <li><a href="">Blog →</a></li>
+                        <li><a href="">Restaurant →</a></li>
+                        <li><a href="">Services→</a></li>
+                        <li><a href="">Personal & CV →</a></li>
+                        <li><a href="">Explore All Templates →</a></li>
+
+                    </ul>
+                </div>
+                <div class="template-img">
+                    <img src="/asset/image/online-template.png" alt="" width="100%">
+                </div>
+            </di>
+            <di class="template-container">
+                <div class="template-img">
+                    <img src="/asset/image/online-template2.png" alt="" width="100%">
+                </div>
+                <div class="template-links">
+                    <div class="template-qoute">
+                        <p>“Squarespace's templates are flexible and easy to use, and serve as a great foundation for your online business.”</p>
+                        <p>THOM MORISON MENSWEAR DESIGNER</p>
+                    </div>
+                    <div class="template-footer-decs">
+                        <p>Get inspired by a collection of websites made by Squarespace users</p>
+                        <a href="">BROWSE WEBSITE EXAMPLES →</a>
+                    </div>
+                   
+                </div>
+    
+            </di>
+            
+
+        </div>
+    </section>
+    <section>
+        <div class="featured-blog-posts-wrapper">
+            <div class="feature-blog-heading-title">
+                <h1 id="modern-solution-qoute" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">MODERN SOLUTIONS</h1>
+            </div>
+            <div class="featured-blog-post-container page-wrapper">
+               <div class="feature-blog-row">
+                   <div class="feature-blog-cols" data-aos="fade-up"
+                   data-aos-anchor-placement="center-center">
+                        <div class="blog-post-img">
+                            <img src="/asset/image/feature-blog-img.png" alt="" width="100%">
+                        </div>
+                   </div>
+                   <div class="feature-blog-cols">
+                        <div class="feature-blog-details">
+                            <div class="feature-blog-title">
+                                <h2>Making it with Squarespace</h2>
+                                <p>Learn from Squarespace customers who are turning their dreams into a reality.</p>
+                                <a href="" id="feature-blog-links">EXPLORE THE BLOG →</a>
+                                <p id="minaa-b-desc">Minaa B. on Mental Health for Entrepreneurs</p>
+                            </div>
+                        </div>
+                   </div>
+                   
+               </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- started featured customer -->
+    <section>
+        <div class="featured-customers-slides-wrapper">
+            <div class="featured-customers-slides-title">
+                <h3>Explore how other entrepreneurs use Squarespace</h3>
+            </div>
+            <div class="featured-customers-slide-container page-wrapper">
+                <div class="featured-customers-slide-rows">
+                    <div class="customers-slide-cols" data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">
+                        <div class="featured-customers-thumnail">
+                            <img src="/asset/image/customer_1.jpeg" alt="" width="100%">
+                        </div>
+                        <div class="featured-customers-description">
+                            <h3 id="featured-customers-name">Adrienne Raquel</h3>
+                            <p id="featured-customers-role">Photograhpers</p>
+                            <a href="" id="learn-more-abt-customer">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="customers-slide-cols" data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">
+                        <div class="featured-customers-thumnail">
+                            <img src="/asset/image/customer_2.jpeg" alt="" width="100%">
+                        </div>
+                        <div class="featured-customers-description">
+                            <h3 id="featured-customers-name">Yi-Mei Truxes</h3>
+                            <p id="featured-customers-role">Fashion Accessories</p>
+                            <a href="" id="learn-more-abt-customer">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="customers-slide-cols" data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">
+                        <div class="featured-customers-thumnail">
+                            <img src="/asset/image/customer_3.jpeg" alt="" width="100%">
+                        </div>
+                        <div class="featured-customers-description">
+                            <h3 id="featured-customers-name">Altrock</h3>
+                            <p id="featured-customers-role">Creative Professional</p>
+                            <a href="" id="learn-more-abt-customer">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="customers-slide-cols" data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">
+                        <div class="featured-customers-thumnail">
+                            <img src="/asset/image/customer_4.jpeg" alt="" width="100%">
+                        </div>
+                        <div class="featured-customers-description">
+                            <h3 id="featured-customers-name">Danny Bowien</h3>
+                            <p id="featured-customers-role">Chef</p>
+                            <a href="" id="learn-more-abt-customer">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="faq-feature-text-wrapper">
+            <div class="faq-feature-heading">
+                <h1>We've got you covered, 24/7</h1>
+            </div>
+            <div class="faq-feature-text-row page-wrapper">
+                <div class="faq-feature-text-cols">
+                    <p>When you create a website with Squarespace, you get free unlimited hosting, top-of-the-line security, and dependable resources to help you succeed. You can count on personalized support around the clock by email, live chat, or by joining a live webinar. </p>
+                    <a href="" id="visit-help-links">VISIT HELP CENTER →</a>
+                </div>
+                <div class="faq-feature-text-cols">
+                    <ul>
+                        <li><a href="">How do I make a website?</a></li>
+                        <li><a href="">What does a Squarespace subscription include?</a></li>
+                        <li><a href="">Is Squarespace right for me?</a></li>
+                        <li><a href="">Can I move to Squarespace from another platform?</a></li>
+                        <li><a href="">Can someone build my website for me?</a></li>
+                        <li><a href="">Have specific questions?</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- end contents -->
+
+
+    <!-- footer section -->
+    <footer class="footer-container">
+        <div class="footer-row page-wrapper">
+            <div class="column">
+                <a href="index.html"><img src="/asset/image/png/squarespace-logo-horizontal-white.png" alt="" width="200px"></a>
+                <select name="" id="txt_curency">
+                    <option value="USD">$ USD</option>
+                    <option value="USD">៛ KHMER RIELS</option>
+                    <option value="USD">£ GBP</option>
+                </select>
+                <select name="" id="txt_lang">
+                    <option value="USD">ENGLISH</option>
+                    <option value="USD">KHMER</option>
+                    <option value="USD">JAPAN</option>
+                </select>
+            </div>
+            <div class="column">
+                <ul>
+                    <h4>Products</h4>
+                    <li><a href="">WEBSITE TEMPLATES</a></li>
+                    <li><a href="">Website</a></li>
+                    <li><a href="">Domains</a></li>
+                    <li><a href="">Online Store</a></li>
+                    <li><a href="">Tock</a></li>
+                    <li><a href="">Extensions</a></li>
+                    <li><a href="">Marketing Tools</a></li>
+                    <li><a href="">Marketing Email</a></li>
+                    <li><a href="">Scheduling</a></li>
+                    <li><a href="">Socail Medias Tools</a></li>
+                    <li><a href="">Professional Email</a></li>
+                    <li><a href="">Logo Maker</a></li>
+                    <li><a href="">Premuim Service</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Feature list</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <h4>Customers</h4>
+                    <li><a href="">WEBSITE EXAMPLES</a></li>
+                    <li><a href="">FEATURED CUSTOMERS</a></li>
+                    <li><a href="">Domains</a></li>
+                    <li><a href="">BUSINESSES</a></li>
+                    <li><a href="">ETSY SELLERS</a></li>
+                    <li><a href="">RESTAURANTS</a></li>
+                    <li><a href="">ARTISTS</a></li>
+                    <li><a href="">BLOGGERS</a></li>
+                    <li><a href="">PHOTOGRAPHERS</a></li>
+                    <li><a href="">WEDDINGS</a></li>
+                    <li><a href="">ENTERPRISE</a></li>
+                    <li><a href="">STUDENTS</a></li>
+
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <h4>Company</h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Investor Relation</a></li>
+                    <li><a href="">Our Brand</a></li>
+                    <li><a href="">Pess & Media</a></li>
+                    <li><a href="">Term of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Security Measure</a></li>
+                    <li><a href="">Contact Us</a></li>
+                   
+                   
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <h4>Community</h4>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Hire An Expert</a></li>
+                    <li><a href="">Furum</a></li>
+                    <li><a href="">Webinars</a></li>
+                    <li><a href="">Developer Platform</a></li>
+                    <li><a href="">Professional</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ended footer section -->
+    <script src="/asset/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+@media screen and (max-width: 1250px) {
+    .header-container  {
+        padding-left: 25px ;
+        padding-right: 25px;
+    }
+    .footer-row {
+        padding: 0 38px;
+    }
+    .hero-text {
+        padding-left: 35px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .footer-row {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 38px;
+    }
+    nav, .navbar-button-container{
+        display: none;
+    }
+    .dropdown-container {
+        display: none;
+    }
+    .menubar-icon {
+        display: block;
+        margin-top: -6px;
+    }
+    .header-container  {
+        padding-left: 25px ;
+        padding-right: 25px;
+    }
+    .menubar-icon {
+        display: block;
+    }
+
+    .hero-text {
+        padding-left: 35px;
+        margin-top: 80px;
+    }
+
+    .grow-your-bn-title h1 {
+        font-size: 6em;
+    }
+    #step-index  {
+        font-size: 4em;
+        padding: 0 20px;
+    }
+    .list-content h3 {
+        padding: 5px 0;
+    }
+    .steps-content2-details #btn-steps  {
+        text-align: center;
+    }
+    .steps-content2-details #btn-steps a {
+        font-size: 18px;
+        
+    }
+    .steps-content2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      
+    }
+
+    .template-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-customers-slide-rows {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px;
+    }
+    .featured-blog-post-container .feature-blog-row  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 40px;
+    }
+    .feature-blog-heading-title {
+        font-size: 4em;
+    }
+    .faq-feature-text-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .footer-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-text {
+        margin-top: 80px;
+    }
+    .grow-your-bn-title h1 {
+        font-size: 4em;
+    }
+    .featured-customers-slide-rows {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 40px;
+    }
+    .feature-blog-heading-title {
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 375px) {
+    .footer-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grow-your-bn-title h1 {
+        font-size: 3em;
+        padding: 5px 0;
+    }
+    .feature-blog-heading-title {
+        font-size: 2em;
+    }
+    .faq-feature-text-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
+}
+
+
