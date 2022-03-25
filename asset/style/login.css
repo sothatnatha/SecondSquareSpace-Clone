@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --max-witdth: 1200px;
+    --primary-font: 'Open Sans', sans-serif;
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-md: 16px;
+
+}
+body {
+    font-family: var(--primary-font);
+}
+.page-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0;
+}
+.header-wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+.logo {
+    text-align: center;
+}
+.login-form-row {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+
+}
+.form-control > label {
+    font-size: 12px;
+}
+.form-control > input{
+    padding: 11px;
+    border: none;
+    border: 1px solid #7a7777;
+
+    background: #fafafa;
+    margin: 10px 0;
+    width: 363px;
+    
+
+}
+.social-connected button {
+    font-family: var(--primary-font);
+    padding: 10px 0;
+
+    width: 356px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.social-connected button:hover {
+    background: #f1f1f1;
+}
+.cant-login {
+    text-align: center;
+    margin-top: 10px;
+   
+
+}
+.cant-login a {
+    text-decoration: none ;
+    color: #2b2828;
+    font-size: 14px;
+    
+}
+.cant-login a:hover {
+    text-decoration: underline;
+
+}
+#support-secure {
+    font-size: 12px;
+    color: #7a7777;
+    text-align: center;
+    margin: 30px 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 990px) {
+    header {
+        padding: 0 30px;
+    }
+    .login-form-row {
+       display: flex;
+       flex-direction: column-reverse;
+        padding: 0 50px;
+        /* margin-bottom: 50px; */
+        
+    }
+    #support-secure {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+}
